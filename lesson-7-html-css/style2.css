@@ -1,0 +1,36 @@
+a {
+	color: blue;
+	font-family: times, serif;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 25px;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 2px solid;
+	margin-bottom: 3px;
+}
+
+a[href*="yandex"] {
+	color: #f70;
+}
+
+a[target="_blank"] + span:after {
+	content: "\21f1";
+	margin-left: 10px;
+	color: #f70;
+	display: inline-block;
+	transform: scale(-1.5, 1.5);
+}
+
+a[href*="google"] {
+	color: #666;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li:before {
+	content: "\26ab";
+	padding-right: 16px;
+}
