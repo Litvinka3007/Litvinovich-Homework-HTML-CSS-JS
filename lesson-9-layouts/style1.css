@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+div {
+    margin: 15px 0;
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.green {
+    background-color: rgb(0, 136, 0);
+}
+
+.blue {
+    background-color: rgb(0, 0, 255);
+}
+
+span {
+    padding: 5px 10px;
+    margin: 15px 0 10px 1px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    text-decoration: underline;
+    margin: 20px 48px 20px 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+label[for="red"] {
+    color: rgb(255, 0, 0);
+}
+
+label[for="green"] {
+    color: rgb(0, 136, 0);
+}
+
+label[for="blue"] {
+    color: rgb(0, 0, 255);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[id="red"]:not(checked) ~ label[for="red"],
+input[id="green"]:not(checked) ~ label[for="green"],
+input[id="blue"]:not(checked) ~ label[for="blue"] {
+    opacity: 1;
+}
+
+input[id="red"]:checked ~ label[for="red"],
+input[id="green"]:checked ~ label[for="green"],
+input[id="blue"]:checked ~ label[for="blue"] {
+    opacity: 0.3;
+}
+
+input[id="red"]:not(checked) ~ span[class="red"],
+input[id="green"]:not(checked) ~ span[class="green"],
+input[id="blue"]:not(checked) ~ span[class="blue"] {
+    display: inline-block;
+}
+
+input[id="red"]:checked ~ span[class="red"],
+input[id="green"]:checked ~ span[class="green"],
+input[id="blue"]:checked ~ span[class="blue"] {
+    display: none;
+}
