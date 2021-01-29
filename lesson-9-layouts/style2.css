@@ -1,0 +1,71 @@
+body {
+    font: 20px Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin: 0 auto;
+    max-width: 510px;
+    cursor: default;
+    background-color: white;
+}
+
+nav {
+    background-color: #FAFAFA;
+    margin: 10px 4px;
+}
+
+nav > ul {
+    padding: 0; 
+    list-style-type: none; 
+}
+
+nav li {
+    display: inline-block;
+    margin-right: -4px; 
+}
+
+nav ul a {
+    font-size: 10px;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color: #A33AD2;
+    display: block;
+    padding: 6px 8px;
+    margin: 6px 3px 6px 2px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+nav ul li:hover, .pager-active {
+    background-color: #FAFAFA;
+}
+
+nav ul li:hover > a, .active > a {
+    color: white;
+    background-color: #A13BCF;
+    margin: 0 3px 0 2px;
+    border: 1px solid #7C12BC;
+    border-radius: 4px;
+    text-shadow: 1px 1px #7F1DC2;
+}
+
+.previous-pages a, .previous-pages:hover a, .following-pages a, .following-pages:hover a {
+    border: none;
+    margin: 0 5px 0 7px;
+}
+
+.previous-pages a:before {
+    content: '\00ab';
+    margin-right: 3px;
+}
+
+.following-pages a:after {
+    content: '\00bb';
+    margin-left: 3px;
+}
+
+.ellipsis {
+    margin: 0 9px 4px 9px;
+    font-weight: 100;
+    color: #95607C;
+    vertical-align: bottom;
+}
