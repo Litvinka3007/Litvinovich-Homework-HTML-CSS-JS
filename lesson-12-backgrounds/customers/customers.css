@@ -1,0 +1,59 @@
+section {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.customer-photo {
+  width: 60%;
+  height: 500px;
+}
+
+#JohnMellow {
+  width: 100%;
+  margin: 48px 0 0 10%;
+
+}
+
+#MikeStatham .customer-photo {
+  background: url("../images/customer-1.jpg");
+  background-size: cover;
+}
+
+#JohnMellow .customer-photo {
+  background: url("../images/customer-2.jpg");
+  background-size: cover;
+}
+
+#MikeStatham .customer-information {
+  text-align: right;
+}
+
+article div {
+  display: inline-block;
+}
+
+.customer-information {
+  margin-top: 190px;
+  width: 30%;
+  vertical-align: top;
+}
+
+.customer-information__title {
+  font-size: 33px;
+  line-height: 43px;
+  margin: 0;
+  color: red;
+}
+
+.customer-information__subtitle {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.customer-information__comment {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
