@@ -1,0 +1,106 @@
+body {
+  background: url("../images/plans-background.jpg") center/cover fixed no-repeat;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.FreePlan, .PlusPlan, .PremiumPlan {
+  width: 70%;
+  padding: 40px 20px;
+  border: 4px solid #967570;
+  background-color: rgba(179, 177, 176, 0.9);
+}
+
+.PremiumPlan {
+  background-color: rgba(145, 111, 103, 0.9);
+}
+
+.FreePlan:hover, .PlusPlan:hover, .PremiumPlan:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.PlusPlan {
+  border-left: none;
+  text-align: left;
+  position: relative;
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.FreePlan {
+  border-right: none;
+  text-align: right;
+  margin: 20px 0 20px 20px;
+  float: right;
+}
+
+.PremiumPlan {
+  border-left: none;
+  text-align: left;
+  margin: 20px 20px 48px 0;
+  float: left;
+}
+
+.recommended {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 105px;
+  padding: 6px;
+  background-color: #D13E2A;
+}
+
+.recommended p {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.ourPlan__title {
+  margin-top: 0;
+  color: black;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.ourPlan__name {
+  text-transform: uppercase;
+}
+
+.ourPlan__subtitle {
+  color: #392E2E;
+  font-size: 20px;
+}
+
+.ourPlan__description {
+  padding: 12px;
+  border: 2px solid #808080;
+  background-color: white;
+}
+
+.ourPlan__description p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: grey;
+}
+
+.PremiumPlan h1 {
+  color: white;
+}
+
+.PremiumPlan h2 {
+  color: #ABA5A3;
+}
+
+.main-footer {
+  float: left;
+  margin-top: 0;
+  width: 100%;
+}
