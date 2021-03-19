@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <form class="contact-form" method="POST">
+      <p class="contact-form__title">Оставить заявку</p>
+      <p class="contact-form__description"></p>
+      <div class="contact-form__input-wrapper">
+        <input name="name" type="text" class="contact-form__input contact-form__input-name" placeholder="Введите Ваше имя">
+        <div class="contact-form__error contact-form__error-name"></div>
+      </div>
+      <div class="contact-form__input-wrapper">
+        <input name="tel" type="tel" class="contact-form__input contact-form__input-tel" placeholder="Введите Ваш номер телефона">
+        <div class="contact-form__error contact-form__error-tel"></div>
+      </div>
+      <div class="contact-form__input-wrapper"> 
+        <input name="email" type="email" class="contact-form__input contact-form__input-email" placeholder="Введите Ваш e-mail">
+        <div class="contact-form__error contact-form__error-email"></div>
+      </div>
+      <div class="contact-form__input-wrapper">
+        <textarea name="text" class="contact-form__input contact-form__text" placeholder="Оставить комментарий..."></textarea>
+        <div class="contact-form__error contact-form__error-text"></div>
+      </div>
+      <button class="contact-form__button" type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
